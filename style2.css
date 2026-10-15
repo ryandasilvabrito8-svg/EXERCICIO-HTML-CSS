@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 17px;
+    height: 600px;
+    background-color: maroon;
+    margin-top: 15px;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+}
+
+.camada1{
+    background-color: blue;
+    padding: 60px;
+    width: 25%;
+    padding-top: 2px;
+
+}
+
+.camada2{
+    background-color: red;
+    padding: 60px;
+    width: 75%;
+    padding-top: 2px;
+}
+
+.camada3{
+    background-color: yellowgreen;
+    padding: 35px;
+    padding-top: 2px;
+}
+
+.camada4{
+    background-color: yellow;
+    padding: 400px;
+    border: 12px solid red;
+    padding-top: 2px;
+}
+
+.camada5{
+    background-color: grey;
+    padding: 35px;
+    padding-top: 2px;
+    
+}
+
+p{padding-top: 2px;}
