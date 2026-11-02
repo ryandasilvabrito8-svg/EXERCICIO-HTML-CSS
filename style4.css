@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+        "topo   topo    topo"
+        "menu   menu    menu"
+        "lateral conteudo aside"
+        "rodape rodape  rodape";
+    background-color: cornflowerblue;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.header-cima {
+    grid-area: topo;
+    background-color: black;
+    padding: 2vh 0;
+}
+
+#nav-cima {
+    grid-area: menu;
+    background-color: darkblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-cima a {
+    flex: 1;
+    color: white;
+    text-decoration: none;
+    font-size: 3vh;
+    padding: 1.5vh 0;
+}
+
+#nav-cima a:hover,
+#nav-esquerda a:hover {
+    background-color: #fff;
+    color: blue;
+    transition: 0.5s all;
+}
+
+#nav-esquerda {
+    grid-area: lateral;
+    background-color: rgb(212, 208, 147);
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-esquerda a {
+    flex: 1;
+    display: block;
+    text-align: left;
+    font-size: 3vh;
+    text-decoration: none;
+    background-color: #999;
+    color: #fff;
+    border-bottom: 1px solid #bbb;
+    padding: 1.5vh 0 1.5vh 10%;
+}
+
+section {
+    grid-area: conteudo;
+    background-color: pink;
+    padding-bottom: 5px;
+}
+
+.header-baixo {
+    width: 95%;
+    margin: auto;
+    background-color: black;
+    font-size: 4vh;
+}
+
+#img {
+    background-image: url("./img/Urso img.jpeg");
+    background-size: cover;
+    background-position: center;
+    margin: 5px 2.7vh 2.7vh;
+    height: 12em;
+}
+
+section p {
+    background-color: plum;
+    width: 95%;
+    margin: 5px auto 0;
+    padding: 5px;
+    font-size: 3vh;
+    text-align: left;
+    color: black;
+}
+
+.div-container {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 5px auto 0;
+}
+
+.linha {
+    width: 31.66%;
+    height: 4em;
+    background-color: gray;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Preencha os caminhos das imagens quando tiver */
+#foto1 { background-image: url(./img/pacote\ primal\ bear.jpeg);}
+#foto2 { background-image: url(./img/ursão\ malvadão.jpeg);}
+#foto3 { background-image: url(./img/recipiente\ do\ primal\ bear.jpeg);}
+
+aside {
+    grid-area: aside;
+    background-color: rgb(173, 86, 255);
+    overflow: hidden;
+}
+
+aside img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+footer {
+    grid-area: rodape;
+    background-color: black;
+    padding: 2vh 0;
+}
